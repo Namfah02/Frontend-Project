@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Strength - Health and Fitness</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../javascript/script.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <section class="header-menu">
+            <menu-component class="menu-container"></menu-component>
+        </section>
+        <article id="enquiry-page">
+                <h1>Enquiry</h1>
+                <form action="#" method="post" id="forms">
+                    
+                    <label for="fname">First name </label>
+                    <input type="text" id="fname" name="fname" placeholder="First name e.g. Jane" class="input-span" pattern="^[A-Z]{1}[A-Za-z \-']+$" required>
+                    <span class="error-message form-fll-width">The name format should be start with uppercase letter</span>
+
+                    <label for="lname">Last name </label>
+                    <input type="text" id="lname" name="lname" placeholder="Last name e.g. Doe" class="input-span" pattern="^[A-Z]{1}[A-Za-z \-']+$" required>
+                    <span class="error-message form-fll-width">The name format should be start with uppercase letter</span>
+   
+                    <label for="email" id="email">Email </label>
+                    <input type="email" id="email" name="email" class="input-span" placeholder="e.g. jane@doe.com" >
+                    <span class="error-message form-fll-width">Please, enter a valid email address</span>
+
+                    <label for="phone">Phone </label>
+                    <input type="tel" id="phone" name="phone" class="input-span" placeholder="Phone e.g. 0412345678" pattern="[0][0-9]{9}" minlength="10" maxlength="10" required>
+                    <span class="error-message form-fill-width">Please, enter Australian phone number start with 0</span>
+
+                    <fieldset class="form-fill-width">
+                        <legend >Gender:</legend>
+                            <input type="radio" id="male" name="gender" value="male" required>
+                            <label for="male" class="radio" >male</label>
+                            <input type="radio" id="female" name="gender" value="female" >
+                            <label for="female" class="radio">female</label>
+                            <input type="radio" id="other" name="gender" value="other" >
+                            <label for="other" class="radio">other</label>
+                    </fieldset>
+                    <span class="error-message form-fill-width">Please, select your gender</span>
+
+                    <fieldset  class="form-fill-width">
+                        <legend >Age: </legend>
+                        <input type="radio" id="undereighteen" name="age" value="undereighteen" required>
+                        <label for="undereighteen" class="radio">under 18</label>
+                        <input type="radio" id="eighteentothirtieth" name="age" value="eighteentothirtieth" >
+                        <label for="eighteentothirtieth" class="radio">18-30</label>
+                        <input type="radio" id="thirtyfirsttofiftieth" name="age" value="thirtyfirsttofiftieth" >
+                        <label for="thirtyfirsttofiftieth" class="radio">31-50</label>
+                        <input type="radio" id="overfiftieth" name="age" value="overfiftieth" >
+                        <label for="overfiftieth" class="radio">over 50</label>
+                    </fieldset>
+                    <span class="error-message form-fill-width">Please, select your age</span>
+
+                    <label for="classes">Class</label>
+                    <select id="classes" name="classes" class="input-span" required>
+                        <option value disabled selected>Choose a class</option>
+                        <option value="abs-blast">Abs blast</option>
+                        <option value="abt">ABT</option>
+                        <option value="aqua">Aqua fit & aqua mode </option>
+                        <option value="body-attack">Body attack</option>
+                        <option value="bady-balance">Body balance</option>
+                        <option value="body-combat">Body combat</option>
+                        <option value="body-jam">Body jam </option>
+                        <option value="body-pump">Body pump</option>
+                        <option value="body-step">Body step </option>
+                        <option value="body-vive">Body vive </option>
+                        <option value="boxing">Boxing & TAE box </option>
+                        <option value="cardio">Cardio blitz & cardio circuit </option>
+                        <option value="chi-ball">Chi ball</option>
+                        <option value="cycle">Cycle </option>
+                        <option value="cycle-entreme">Cycle extreme </option>
+                        <option value="hilo">Hilo & fat burner </option>
+                        <option value="pilates">Pilates </option>
+                        <option value="power-hour">Power hour </option>
+                        <option value="rejuvenate-fitness">Rejuvenate, low impact & gentle fitness </option>
+                        <option value="rpm">Rpm</option>
+                        <option value="sculptandcombo">Sculpt & combo </option>
+                        <option value="step-classes">Step moves, step basic & step burner </option>
+                        <option value="tai-chi">Tai chi </option>
+                        <option value="dance">World dance & dance </option>
+                        <option value="yoga">Yoga</option>
+                        <option value="zumba">Zumba</option>
+                    </select>
+                    <span class="error-message form-fill-width">Please, select your class</span>
+
+                    <label for="message">Message </label>
+                    <textarea id="message" name="message" rows="6" cols="30" class="form-fill-width" placeholder="Message" required></textarea>
+                    <span class="error-message form-fill-width">Please, enter your massage</span>
+
+                    <input type="checkbox" id="agree" name="agree" class="checkbox" required>
+                    <label for="agree" class="input-span">I agree to the <a href="#">terms and conditions</a> including the <a href="#">privacy policy</a>.</label>
+                    <span class="error-message">Please, acknowledge the terms and conditions including privacy policy</span>
+
+                    <span id="help-button">Help</span>
+                    <input type="reset" id="reset-button" value="Reset">
+                    <input type="submit" id="send-button" value="Send">
+
+                    <video id="help-video" class="form-fill-width" src="../video/help-video.mp4" autoplay loop muted></video>
+                </form>
+        </article>
+        <footer class="menu menu-footer">
+            <menu-component class="footer-container"></menu-component>
+        </footer>
+    </main>
+    <script src="../javascript/script.js"></script>
+</body>
+
+</html>
