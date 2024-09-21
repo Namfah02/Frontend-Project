@@ -1,0 +1,699 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    width: 80%;
+    min-height: 100vh;
+    margin: 0 auto;
+
+}
+
+header {
+    background-color: #000;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.nav-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+.menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin: 0 10px;
+
+}
+
+.menu li a {
+    color: #ffde59;
+    font-size: 12px;
+}
+
+.menu a:hover {
+    color: #fff;
+    font-size: 14px;
+}
+
+#active a {
+    color: #fff;
+    font-size: 14px;
+}
+
+article {
+    height: 100%;
+}
+
+h1 {
+    font-size: 18px;
+    text-align: center;
+    text-shadow: 3px 3px 3px #ddd;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 16px;
+    margin: 20px;
+    text-align: center;
+    text-shadow: 3px 3px 3px #ddd;
+}
+
+p {
+    font-size: 14px;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 10px;
+}
+
+figure>figcaption {
+    text-align: center;
+    background-color: #000;
+    color: #ffde59;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 40px;
+}
+
+/* Homepage */
+.homepage {
+    background-image: url('../images/home-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.homepage>h1, .homepage>h2 {
+    color: #ffde59;
+    text-shadow: 3px 3px 3px #000;
+
+}
+
+.home-info>p {
+    background-color: #fff;
+    color: #000;
+    margin: 200px;
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+.main-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 50px;
+    text-shadow: 3px 3px 3px #000;
+    text-align: center;
+}
+
+.main-link>section {
+    background-position: center;
+    width: 300px;
+    height: 200px;
+    margin: 50px;
+    border-radius: 5px;
+}
+
+.main-link a {
+    font-size: 12px;
+    color: #fff;
+}
+
+.main-link a:hover {
+    font-size: 14px;
+    color: #ffde59;
+}
+
+.services-link {
+    background-image: url('../images/service-group.jpg');
+    background-size: 100%;
+
+}
+
+.training-link {
+    background-image: url('../images/boxing.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.about-link {
+    background-image: url('../images/about-background.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.enquiry-link {
+    background-image: url('../images/karate.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/* services page */
+.group-classes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.group-classes>img {
+    width: 300px;
+    height: 200px;
+}
+
+.group-list>ul>li {
+    list-style: none;
+    padding: 5px;
+    font-size: 14px;
+    color: #ffde59;
+    background-color: #000;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.group-list>ul>li::before {
+    content: url('../images/activity.svg');
+    margin: 1rem;
+
+}
+
+.group-list>ul>li:nth-child(even) {
+    background-color: #ffde59;
+    color: #000;
+}
+
+.group-private {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.group-private figure>img {
+    width: 220px;
+    height: 150px;
+}
+
+/* trainng page */
+.owner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 1rem;
+    background-image: url('../images/dumbbell.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.owner>p, .training-card>p {
+    color: #ffde59;
+    background-color: #000;
+    margin: 20px;
+    padding: 1rem;
+}
+
+.owner>img {
+    width: 280px;
+    height: 400px;
+}
+
+.training-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/* ::after pseudo-element  */
+.training-card>p::after {
+    content: "Bachelor Degrees in Human Movements";
+    color: #ef3c3c;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.training-card>figure {
+    margin: 20px;
+}
+
+.training-card>figure>img {
+    width: 220px;
+    height: 300px;
+}
+
+/* about page */
+.about-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #000;
+}
+
+.about-section>p {
+    padding: 3rem;
+    color: #ffde59;
+}
+
+.about-section>h2 {
+    color: #fff;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.about-section>img {
+    margin: 5px;
+    width: 300px;
+    height: 200px;
+
+}
+
+.figure-club {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.figure-club>figure>img {
+    width: 300px;
+    height: 200px;
+}
+
+/* enquiry page */
+#enquiry-page {
+    min-width: 400px;
+    max-width: 600px;
+    margin: auto;
+}
+
+#forms {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: 14px;
+}
+
+.input-span {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
+    grid-column: 2/5;
+    margin-bottom: 10px;
+    height: 1.5rem;
+}
+
+.form-fill-width {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1/5;
+    margin-bottom: 10px;
+}
+
+#reset-button {
+    -ms-grid-column: 3;
+    grid-column: 3;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#send-button {
+    -ms-grid-column: 4;
+    grid-column: 4;
+    background-color: #028951;
+    color: #ffde59;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.error-message {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1/5;
+    display: none;
+    color: #ef3c3c;
+    margin-bottom: 10px;
+}
+
+label::before, legend::before {
+    content: "*";
+    color: #ef3c3c;
+}
+
+.radio::before {
+    display: none;
+}
+
+/* Add icons */
+label[for="fname"]::after, label[for="lname"]::after {
+    content: url('../images/user.svg');
+}
+
+label[for="email"]::after {
+    content: url('../images/mail.svg');
+}
+
+label[for="phone"]::after {
+    content: url('../images/phone-call.svg');
+}
+
+label[for="classes"]::after {
+    content: url('../images/heart.svg');
+}
+
+label[for="message"]::after {
+    content: url('../images/inbox.svg');
+}
+
+.star-icon {
+    visibility: hidden;
+}
+
+input:invalid:not(:-moz-placeholder-shown)+.error-message {
+    display: block;
+}
+
+input:invalid:not(:-ms-input-placeholder)+.error-message {
+    display: block;
+}
+
+input:invalid:not(:placeholder-shown)+.error-message {
+    display: block;
+}
+
+input:invalid:not(:-moz-placeholder-shown) {
+    border: 2px solid #ef3c3c;
+}
+
+input:invalid:not(:-ms-input-placeholder) {
+    border: 2px solid #ef3c3c;
+}
+
+input:invalid:not(:placeholder-shown) {
+    border: 2px solid #ef3c3c;
+}
+
+input:valid:not(:-moz-placeholder-shown) {
+    border: 2px solid #028951;
+}
+
+input:valid:not(:-ms-input-placeholder) {
+    border: 2px solid #028951;
+}
+
+input:valid:not(:placeholder-shown) {
+    border: 2px solid #028951;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+#help-video {
+    -ms-grid-column-align: stretch;
+    justify-self: stretch;
+    height: 0;
+    -webkit-transition: height 0.5s;
+    -o-transition: height 0.5s;
+    transition: height 0.5s;
+}
+
+#help-button {
+    color: #152ff4;
+    font-size: 20px;
+    text-decoration: underline;
+    cursor: help;
+    margin: 20px 0;
+}
+
+#help-button:hover~#help-video, #help-video:hover {
+    height: 300px;
+}
+
+
+/* footer section */
+footer {
+    height: 50px;
+    background-color: #000;
+    align-items: center;
+    color: #ffde59;
+}
+
+.menu.menu-footer {
+    display: grid;
+    text-align: center;
+}
+
+.menu.menu-footer a {
+    color: #ffde59;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.menu.menu-footer a:hover {
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Hamburger Menu */
+.ham-menu {
+    display: inline-block;
+    cursor: pointer;
+    position: fixed;
+    right: 0.5rem;
+    top: 2rem;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #ffde59;
+    margin: 6px 0;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: translate(0, 11px) rotate(-45deg);
+    -ms-transform: translate(0, 11px) rotate(-45deg);
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: translate(0, -11px) rotate(45deg);
+    -ms-transform: translate(0, -11px) rotate(45deg);
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.menu-active {
+    display: block !important;
+}
+
+@media only screen and (min-width: 541px) {
+    .ham-menu {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    main {
+        width: 100%;
+    }
+
+    /* hamburger menu */
+    .menu {
+        display: none;
+    }
+
+    .nav-wrapper {
+        padding-right: 1rem;
+        height: auto;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+
+    }
+
+    .menu li {
+        margin: 1rem;
+    }
+
+    article {
+        height: auto;
+    }
+
+    /* home page */
+    .home-info>p {
+        display: -ms-grid;
+        display: grid;
+        margin: 20px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .main-link>section {
+        background-repeat: no-repeat;
+        margin: 10px;
+    }
+
+    /* services page */
+    .group-classes {
+        display: -ms-grid;
+        display: grid;
+    }
+
+    .group-classes>img {
+        margin-left: 0.5rem;
+    }
+
+    /* traning page */
+    .owner, .training-card {
+        display: block;
+        text-align: center;
+    }
+
+    /* about us page */
+    .about-section {
+        display: -ms-grid;
+        display: grid;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .about-section>img {
+        margin-left: 3rem;
+    }
+
+    /* enquiry page */
+    #enquiry-page {
+        display: -ms-grid;
+        display: grid;
+        min-width: 350px;
+    }
+
+    fieldset {
+        margin: 0;
+    }
+
+    #email {
+        display: none;
+    }
+
+    label::before, legend::before {
+        visibility: hidden;
+    }
+
+    .input-span {
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 3;
+        grid-column: 1/5;
+    }
+
+    label[for="fname"], label[for="lname"] {
+        content: url('../images/user.svg');
+    }
+
+    label[for="email"] {
+        content: url('../images/mail.svg');
+    }
+
+    label[for="phone"] {
+        content: url('../images/phone-call.svg');
+    }
+
+    label[for="classes"] {
+        content: url('../images/heart.svg');
+    }
+
+    label[for="message"] {
+        content: url('../images/inbox.svg');
+    }
+
+}
